@@ -1,0 +1,17 @@
+<ng-container *ngIf="dataSource?.length; else noData" >
+  <div class="container" >
+    <p>Order Overview</p>
+
+    <app-data-table
+      [dataSource]="dataSource"
+      [displayedColumns]="displayedColumns"
+      [callFrom]="'chosen-products'"
+    ></app-data-table>
+
+  </div>
+
+</ng-container>
+<ng-template #noData>
+  <h3>No Chosen Articles</h3>
+</ng-template>
+

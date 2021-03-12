@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+p {
+  padding: 7px;
+  color: #737792;
+  font-size: 22px;
+}
+
+
+h3 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 25px;
+  margin-top: 50px;
+}

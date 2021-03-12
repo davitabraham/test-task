@@ -1,0 +1,21 @@
+.container {
+max-width: 1024px;
+  margin: 0 auto;
+}
+
+
+p {
+  text-align: center;
+  padding: 7px;
+  border: 1px solid rgba(125, 168, 222, 0.35);
+  border-radius: 5px;
+  background-color: rgba(224, 222, 222, 0.32);
+  color: #737792;
+}
+
+h3 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 25px;
+  margin-top: 50px;
+}

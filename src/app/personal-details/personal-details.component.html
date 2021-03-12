@@ -1,0 +1,40 @@
+<div class="example-container">
+  <form [formGroup]="personalData">
+    <div class="top">
+      <div class="customerType">
+        <label>Customer: </label>
+        <mat-radio-group formControlName="customerType" required>
+          <mat-radio-button value="private">Private Customer</mat-radio-button>
+          <mat-radio-button value="business">Business Customer</mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <div class="form-fields">
+        <mat-form-field class="field" appearance="fill">
+          <mat-label>First Name</mat-label>
+          <input matInput placeholder="First Name" formControlName="firstName" required>
+        </mat-form-field>
+
+        <mat-form-field class="field" appearance="fill">
+          <mat-label>Surname</mat-label>
+          <input matInput placeholder="Surname" formControlName="surname" required>
+        </mat-form-field>
+
+        <mat-form-field class="field" appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Email" formControlName="email" required>
+        </mat-form-field>
+
+        <mat-form-field class="field" appearance="fill">
+          <mat-select required formControlName="age">
+            <mat-option *ngFor="let single of ages"  value="{{single.name}}">{{single.name}}</mat-option>
+          </mat-select>
+          <mat-label>Select Age</mat-label>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <mat-checkbox formControlName="allowed">Allow to save data</mat-checkbox>
+
+  </form>
+</div>

@@ -1,0 +1,16 @@
+<ng-container *ngIf="dataSource?.length; else noData" >
+<div class="container" >
+  <p>Choose Products</p>
+
+  <app-data-table
+    [dataSource]="dataSource"
+    [displayedColumns]="displayedColumns"
+    [callFrom]="'products-chooser'"
+
+  ></app-data-table>
+
+</div>
+</ng-container>
+<ng-template #noData>
+  <h3>No matching products</h3>
+</ng-template>

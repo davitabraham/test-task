@@ -1,0 +1,47 @@
+.example-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+
+.example-container .mat-form-field {
+  width: 220px;
+}
+
+.example-container form {
+  max-width: 1024px;
+  width: 80%;
+  margin: 10px auto;
+}
+
+
+.example-container .mat-radio-button {
+  margin: 0 12px;
+}
+
+.customerType {
+  display: flex;
+  justify-content: center;
+}
+::ng-deep .customerType .mat-radio-label{
+  margin-bottom: 10px;
+}
+.form-fields{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.form-fields .field{
+  width: 40%;
+  margin: 0 4px;
+}
+.top{
+  display: flex;
+  justify-content: space-between;
+}
+mat-checkbox{
+  display: flex;
+  justify-content: flex-end;
+}
