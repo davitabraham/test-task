@@ -25,7 +25,6 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
 import { DataTableComponent } from './shared/data-table/data-table.component';
-import { PriceViewPipe } from './shared/pipes/price-view.pipe';
 
 @NgModule({
   declarations: [
@@ -37,7 +36,6 @@ import { PriceViewPipe } from './shared/pipes/price-view.pipe';
     ChosenProductComponent,
     MainComponent,
     DataTableComponent,
-    PriceViewPipe
   ],
   imports: [
     BrowserModule,

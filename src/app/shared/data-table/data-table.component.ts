@@ -36,10 +36,10 @@ export class DataTableComponent implements OnInit {
     if (!element.quantity && num < 0) {
       return;
     } else {
-      const data = JSON.parse(localStorage.getItem('data'));
+      const data = JSON.parse(localStorage.getItem('products'));
       element.quantity += num;
       element.total += num * element.unit_price;
-      element.total = +element.total.toFixed(2);
+      element.total = +element.total;
       if (!data) {
 
         localStorage.setItem('products', JSON.stringify([element]));
@@ -61,6 +61,6 @@ export class DataTableComponent implements OnInit {
   }
 
   private calculateTotalPrice(data) {
-    this.totalPrice = data.reduce((aggr, item) => aggr + item.total, 0).toFixed(2);
+    this.totalPrice = data.reduce((aggr, item) => aggr + item.total, 0);
   }
 }

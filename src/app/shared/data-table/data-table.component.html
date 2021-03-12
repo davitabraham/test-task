@@ -14,7 +14,7 @@
           <th mat-header-cell *matHeaderCellDef> Unit Price </th>
           <td mat-cell *matCellDef="let element"  class="data-table-td">
             <span *ngIf="callFrom && callFrom === 'chosen-products'">{{element.quantity}} X </span>
-            {{element.unit_price | priceView}} Euro </td>
+            {{element.unit_price}} Euro </td>
         </ng-container>
 
         <ng-container matColumnDef="quantity">
@@ -27,7 +27,7 @@
 
         <ng-container matColumnDef="total">
           <th mat-header-cell *matHeaderCellDef> Total </th>
-          <td mat-cell *matCellDef="let element"  class="data-table-td"> {{element.total | priceView}} Euro </td>
+          <td mat-cell *matCellDef="let element"  class="data-table-td"> {{element.total}} Euro </td>
         </ng-container>
 
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
@@ -36,7 +36,7 @@
       </table>
       <div *ngIf="callFrom && callFrom === 'chosen-products'" class="total">
         <p><span *ngIf="user">Ordered by: {{user.firstName}} {{user.surname}}</span></p>
-        <p>Total: {{totalPrice | priceView}} Euro</p>
+        <p>Total: {{totalPrice}} Euro</p>
       </div>
     </div>
 
